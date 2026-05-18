@@ -677,6 +677,94 @@
     .package-card { page-break-inside: avoid; }
     .protocol-step { page-break-inside: avoid; }
   }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 640px) {
+
+    body { font-size: 14px; }
+
+    /* Cover */
+    .cover { padding: 48px 24px; min-height: 100svh; }
+    .cover-logo { font-size: 26px !important; }
+    .cover-tagline { font-size: 9px; letter-spacing: 0.15em; margin-bottom: 40px; text-align: center; }
+    .cover-divider { height: 40px; margin-bottom: 32px; }
+    .cover-title { font-size: 26px; }
+    .cover-subtitle { font-size: 9px; letter-spacing: 0.1em; margin-bottom: 40px; text-align: center; }
+    .cover-hospital { padding: 12px 18px; }
+    .cover-hospital-text { font-size: 10px; }
+    .cover-date { right: 20px; bottom: 20px; }
+
+    /* Pages */
+    .page { padding: 28px 18px; }
+    .page-header { margin-bottom: 24px; padding-bottom: 14px; }
+    .page-section-label { display: none; }
+
+    /* Section titles */
+    .section-title { font-size: 24px; }
+    .section-intro { font-size: 13px; margin-bottom: 20px; max-width: 100%; }
+    .section-eyebrow { font-size: 8px; }
+
+    /* Package card header: stack vertically */
+    .package-header {
+      flex-direction: column;
+      gap: 12px;
+      padding: 18px 18px;
+    }
+    .package-number { font-size: 36px; margin-right: 0; }
+    .package-ideal { text-align: left; margin-left: 0; }
+    .package-ideal-text { max-width: 100%; text-align: left; }
+    .package-name { font-size: 20px; }
+
+    /* Package body: single column */
+    .package-body { padding: 16px 18px; }
+    .package-cols {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .package-item { font-size: 13px; margin-bottom: 8px; }
+    .package-col-title { font-size: 9px; }
+
+    /* Package footer: stack */
+    .package-footer {
+      flex-direction: column;
+      gap: 14px;
+      padding: 14px 18px;
+    }
+    .package-price-block { text-align: left; }
+    .package-price { font-size: 22px; }
+    .model-tag { font-size: 11px; }
+
+    /* Comparison table: scrollable */
+    .compare-table { display: block; overflow-x: auto; white-space: nowrap; font-size: 12px; }
+    .compare-table th, .compare-table td { padding: 8px 12px; }
+
+    /* Two col: stack */
+    .two-col { grid-template-columns: 1fr; }
+
+    /* Info cards */
+    .info-card { padding: 14px 16px; }
+    .info-card-item { font-size: 13px; margin-bottom: 7px; }
+
+    /* Addon card */
+    .addon-card { flex-direction: column; gap: 10px; padding: 16px; }
+    .addon-desc { font-size: 12px; }
+
+    /* Protocol */
+    .protocol-intro { padding: 20px 18px; border-radius: 12px; }
+    .protocol-intro-title { font-size: 18px; }
+    .protocol-intro-text { font-size: 12px; max-width: 100%; }
+
+    .protocol-step { gap: 14px; }
+    .protocol-step:not(:last-child)::before { left: 17px; }
+    .step-num { width: 34px; height: 34px; font-size: 15px; }
+    .step-title { font-size: 16px; }
+    .step-text { font-size: 12.5px; }
+    .step-tag, .step-tag-pink { font-size: 11px; padding: 3px 10px; }
+
+    /* Closing box */
+    .closing-box { padding: 14px 16px; }
+    .closing-box-text { font-size: 12.5px; }
+  }
 </style>
 </head>
 <body>
